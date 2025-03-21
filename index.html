@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffeb3b, #f44336, #2196f3);
+            color: #333;
+            transition: background 1s ease;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #d4ac0d;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            animation: fadeIn 1s ease-out; /* Add fade-in animation */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute;
+            top: 75px;
+            left: 75px;
+            animation: slideInLeft 1s ease-out; /* Add slide-in animation */
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #c68f00;
+            text-align: center;
+            animation: slideInDown 1s ease-out; /* Add slide-in animation */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #c68f00;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        .section-content {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            animation: slideInUp 1s ease-out; /* Add slide-in animation */
+        }
+
+        .download-button {
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+            transition: background-color 0.3s ease;
+            animation: pulse 2s infinite ease-in-out; /* Add pulse animation */
+        }
+
+        .download-button:hover {
+            background-color: #fdd835;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #d4ac0d;
+            animation: fadeIn 1s ease-out; /* Add fade-in animation */
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        #light-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #light-effect {
+            position: fixed;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+            pointer-events: none;
+            z-index: 999;
+            display: none;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideInDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://i.ibb.co/MyGykFxQ/IMG-20240326-WA0002.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>Kaleeshwaran k</h1>
+            <p>BSc-Computer Science</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I am a computer science student. I am just learning computer languages, such as CSS, JavaScript, Python, HTML, Tally etc.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Jesu arts and science collage - BSc Computer Science</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Data Structure</li>
+                <li>Java</li>
+                <li>CSS</li>
+                <li>HTML</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Creating portfolio about myself using HTML</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <center>
+                <h2>Resume</h2>
+                <a href="https://i.ibb.co/0RJ7CMkq/White-and-Beige-Simple-Student-CV-Resume-20250321-142259-0000.png target="_blank" class="download-button">Download CV</a>
+            </center>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kaleeshwaran k</p>
+    </footer>
+
+    <button id="light-button">Toggle Light</button>
+    <div id="light-effect"></div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        setInterval(() => {
+            const colors = [
+                'linear-gradient(135deg, #ffeb3b, #f44
